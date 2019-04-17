@@ -3,22 +3,59 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<title>Investigação</title>
-	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css">
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="play">
 		<h1>Você está preparado para uma aventura de muito mistério?</h1>
 		<button type="">Sim</button>
 	</div>
-	<div class="introducao1">
-		<h1>O outono finalmente havia chegado e a temperatura começava a cair...</h1>
+	<div class="outono">
+		<h1>O outono finalmente havia chegado e a temperatura começara a cair...</h1>
 	</div>
-	<div class="introducao2">
-		<h1>Era abril quando mais um caso marcou a minha carreira.</h1>
+	<div class="abril">
+		<h1>Era abril de 2018 quando mais um caso marcou a minha carreira.</h1>
 	</div>
-	<div class="introducao3">
-		<h1>Olá a todos que já me conhecem! Me chamo Roberto Nogueira e vou contar mais uma história que vivi nesses anos de investigação na polícia no estado de Pernambuco. Como a ganância humana destruiu mais uma família!</h1>
+	<div class="roberto">
+		<h1>Olá a todos que já me conhecem! Me chamo Roberto Nogueira e vou contar mais uma história que vivi nesses anos de investigação na polícia no estado de Pernambuco. De como a ganância humana destruiu mais uma família!</h1>
 	</div>
+	<div class="relembrar">
+		<h1>No nosso último encontro contei a vocês um dos casos mais sombrio que vivi enquanto assistente de perito: O caso da família Rabelo!</h1>
+		<h6>Você gostaria de relembrar este caso ou dar continuidade a uma hístória tão trágica quanto a dos Rabelos.</h6>
+		<button>Continuar</button> <button>Resumo</button>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.4.0.min.js" type="text/javascript"></script>
+	<script>
+		var botaoSim = $(".play button")
+		var outono = $(".outono")
+		var abril = $(".abril")
+		var roberto = $(".roberto")
+		var relembrar = $(".relembrar")
+
+		outono.hide()
+		abril.hide()
+		roberto.hide()
+		relembrar.hide()
+
+		botaoSim.click(function(){
+			$(".play").addClass("animated zoomOut");
+
+			outono.fadeIn(100)
+			outono.addClass("animated rotateIn")
+			outono.delay(4000).fadeOut(100)
+
+			abril.delay(4000).fadeIn(100).delay(4000)
+			abril.addClass("animated bounceInUp")
+			abril.fadeOut(100).delay(4000)
+
+			roberto.delay(8000).fadeIn(100).delay(4000)
+			roberto.addClass("animated zoomIn")
+			roberto.fadeOut(100)
+		})
+	</script>
 </body>
 </html>
