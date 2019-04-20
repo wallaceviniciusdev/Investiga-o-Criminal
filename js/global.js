@@ -11,16 +11,48 @@ function escrever(str, el) {
 escrever(texto, playText)
 
 
-/*
-$(".play > .fitas > .radial > #play_screen > h1").addClass("animated bounceInUp")
-$(".play > .fitas > .radial > #play_screen > button").addClass("animated bounceInDown")
-
-
 var play = $(".play")
 var parte1 = $(".parte1")
 var parte2 = $(".parte2")
 var parte3 = $(".parte3")
 var parte4 = $(".parte4")
+var parte5 = $(".parte5")
+var parte6 = $(".parte6")
+var parte7 = $(".parte7")
+var parte8 = $(".parte8")
+var parte9 = $(".parte9")
+var parte10 = $(".parte10")
+
+parte1.hide()
+parte2.hide()
+parte3.hide()
+parte4.hide()
+parte5.hide()
+parte6.hide()
+parte7.hide()
+parte8.hide()
+parte9.hide()
+parte10.hide()
+
+function playFunc(){
+	var button = $(".play button")
+
+
+	button.click(function(){
+		play.addClass("animated fadeOutUpBig")
+		play.fadeOut()
+		parte1.show()
+		parte1.addClass("animated bounceInUp")
+	})
+}
+
+playFunc();
+
+
+/*
+$(".play > .fitas > .radial > #play_screen > h1").addClass("animated bounceInUp")
+$(".play > .fitas > .radial > #play_screen > button").addClass("animated bounceInDown")
+
 
 escrever(texto, playText)
 
