@@ -1,0 +1,79 @@
+body {
+	overflow-x: hidden;
+	font-family: "Anton";
+}
+
+#section {
+	width: 100%;
+	height: 100vh;
+}
+
+.play {
+	background-color: black;
+	text-align: center;
+	overflow-y: hidden;
+}
+
+.play > .fitas > .radial > #play_screen > h1 {
+	color: white!important;
+	font-size: 30px;
+	text-transform: uppercase;
+}
+
+.play > .fitas {
+	background-image: url("../images/play_wallpaper.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.play > .fitas > .radial {
+	background-image: radial-gradient(rgba(0,0,0,0.5), #000);
+	width: 100%;
+	height: 100vh;
+}
+
+.play > .fitas > .radial > #play_screen > button {
+	background-color: #FFC312;
+	border: none;
+	padding: 10px 40px;
+	border-radius: 4px;
+	outline: none;
+	text-transform: uppercase;
+	box-shadow: 0 0 15px rgba(0,0,0,0.7);
+}
+
+.parte1 {
+	background-color: #e67e22;
+}
+
+.parte1 > h1 {
+	color: white;
+	font-size: 32px;
+	text-align: right;
+	padding: 0 20px;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.parte1 > .image-outono {
+	background-image:url("../images/outono.svg");
+	width: 200%;
+	height: 500px;
+	position: absolute;
+}
+
+#play_screen {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+	padding: 0 30px;
+}
+
+.parte2 {
+	background-color: #f1c40f;
+}
+
+.parte3 {
+	background-color: #3498db;
+}
