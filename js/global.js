@@ -8,6 +8,8 @@ function escrever(str, el) {
     el.innerHTML += next;
   }, 60);
 }
+escrever(texto, playText)
+
 
 /*
 $(".play > .fitas > .radial > #play_screen > h1").addClass("animated bounceInUp")
