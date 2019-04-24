@@ -23,7 +23,7 @@ var parte8 = $(".parte8")
 var parte9 = $(".parte9")
 var parte10 = $(".parte10")
 
-parte1.hide()
+/*parte1.hide()
 parte2.hide()
 parte3.hide()
 parte4.hide()
@@ -37,12 +37,36 @@ parte10.hide()
 function playFunc(){
 	var button = $(".play button")
 
-
 	button.click(function(){
 		play.addClass("animated fadeOutUpBig")
 		play.fadeOut()
 		parte1.show()
 		parte1.addClass("animated bounceInUp")
+
+		setTimeout(function(){
+			parte1.addClass("animated bounceOutUp")
+			parte1.hide()
+
+			parte2.show()
+			parte2.addClass("animated bounceInLeft")
+		}, 6000)
+
+		setTimeout(function(){
+			parte2.addClass("animated bounceOutRight")
+			parte2.hide()
+
+			parte3.show()
+			parte3.addClass("animated bounceInDown")
+		}, 12000)
+
+		setTimeout(function(){
+			parte3.addClass("animated flipOutX")
+			parte3.hide()
+
+			parte4.show()
+			parte4.addClass("animated flipInY")
+
+		}, 19000)
 	})
 }
 
